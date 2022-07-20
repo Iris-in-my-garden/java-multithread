@@ -1,4 +1,6 @@
-package main.java.com.github.shuran;
+package main.java.com.github.shuran.basic;
+
+import main.java.com.github.shuran.basic.*;
 
 public class MultiThreadTest {
 	public static void main(String[] args) {

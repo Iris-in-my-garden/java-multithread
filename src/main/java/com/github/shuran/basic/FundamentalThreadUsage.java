@@ -1,4 +1,4 @@
-package main.java.com.github.shuran;
+package main.java.com.github.shuran.basic;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
