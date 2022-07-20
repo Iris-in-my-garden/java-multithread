@@ -1,14 +1,14 @@
-package main.java.com.github.elaine;
+package main.java.com.github.shuran;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * 
- * @author Elaine
+ * @author shuran
  * @date 2022.07.16
  * 
- *       ²âÊÔReentrantLock
+ * æµ‹è¯• ReentrantLock
  */
 public class ReentrantlockExample {
 
@@ -20,7 +20,6 @@ public class ReentrantlockExample {
 			threads[i] = new Thread() {
 				public void run() {
 					lockExample.func();
-//					lockExample.getCount();
 				}
 			};
 			threads[i].start();
@@ -38,14 +37,11 @@ public class ReentrantlockExample {
 					count++;
 					System.out.println(count);
 				}
-			} finally { // ÒªÔÚfinallyÀïunlock£¬ÒÔÃâËÀËø
+			} finally { // finallyè¦é‡Šæ”¾é”
 				lock.unlock();
 			}
 		}
 
-		public int getCount() {
-			return count;
-		}
 	}
 
 }

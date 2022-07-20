@@ -1,4 +1,4 @@
-package main.java.com.github.elaine;
+package main.java.com.github.shuran;
 
 public class MultiThreadTest {
 	public static void main(String[] args) {
@@ -6,7 +6,8 @@ public class MultiThreadTest {
 //		testRunnableAndCallableThread();
 //		testReentrantLock();
 //		testWaitAndNotify();
-		testAwaitAndSignal();
+//		testAwaitAndSignal();
+		testSynchronized();
 	}
 
 	public static void testUnsafeThread() {
@@ -36,7 +37,7 @@ public class MultiThreadTest {
 		try {
 			WaitNotifyExample.testWaitAndNotify();
 		} catch (Exception e) {
-
+			e.printStackTrace();
 		}
 
 	}
@@ -45,9 +46,17 @@ public class MultiThreadTest {
 		try {
 			AwaitSignalExample.testAwaitAndSignal();
 		} catch (Exception e) {
-
+			e.printStackTrace();
 		}
 
+	}
+
+	public static void testSynchronized(){
+		try {
+			SynchronizedExample.testSynchronized();
+		} catch (Exception e){
+			e.printStackTrace();
+		}
 	}
 
 }

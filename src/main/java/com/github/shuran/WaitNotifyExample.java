@@ -1,13 +1,12 @@
-package main.java.com.github.elaine;
+package main.java.com.github.shuran;
 
 /**
  * 
- * @author Elaine
+ * @author shuran
  * @Date 2022.07.16
  * 
- *       每个对象都有wait notify方法
- * 
- *       测试wait notify, 所有线程等着比赛信号开始
+ * 娴嬭瘯wait notify
+ *
  */
 public class WaitNotifyExample {
 
@@ -34,7 +33,7 @@ public class WaitNotifyExample {
 				synchronized (this) {
 					while (!fire) {
 //						System.out.println("wait run: " + Thread.currentThread().getName());
-						wait(); // 等待比赛开始的信号
+						wait(); //绛夊緟姣旇禌淇″彿
 
 					}
 				}
@@ -47,7 +46,7 @@ public class WaitNotifyExample {
 		}
 
 		public synchronized void fire() {
-			this.fire = true; // 发射比赛开始的信号
+			this.fire = true; // 鍙戝嚭姣旇禌淇″彿
 			notifyAll();
 //			notify();
 		}

@@ -1,14 +1,14 @@
-package main.java.com.github.elaine;
+package main.java.com.github.shuran;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * @author Elaine
+ * @author shuran
  * @date 2022.07.16
  * 
- *       ²âÊÔawait signal ÏÔÊ¾Ìõ¼ş
+ * æµ‹è¯•  await signal
  */
 public class AwaitSignalExample {
 

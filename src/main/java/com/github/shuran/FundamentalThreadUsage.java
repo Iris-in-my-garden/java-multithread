@@ -1,14 +1,14 @@
-package main.java.com.github.elaine;
+package main.java.com.github.shuran;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
 /**
- * »ù±¾Ïß³ÌÓÃ·¨: 1. runnable 2. callable
- * 
- * @author Elaine
+ * @author shuran
  * @date 2022.07.14
+ *
+ * åŸºç¡€ç”¨æ³•ï¼š1. runnable 2. callable
  */
 public class FundamentalThreadUsage {
 

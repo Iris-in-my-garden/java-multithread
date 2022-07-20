@@ -1,11 +1,11 @@
-package main.java.com.github.elaine;
+package main.java.com.github.shuran;
 
 /**
  * 
- * @author Elaine
+ * @author shuran
  * @date 2022.07.13
- * 
- *       (1)²âÊÔ¶àÏß³Ì¾ºÌ¬Ìõ¼şÎÊÌâ (2)²âÊÔÄÚ´æ¿É¼ûĞÔ
+ * 1. æµ‹è¯•ç«æ€æ¡ä»¶
+ * 2. æµ‹è¯•å¯è§æ€§é—®é¢˜
  */
 public class ThreadUnsafeExample {
 	public static boolean flag = false;
@@ -19,11 +19,11 @@ public class ThreadUnsafeExample {
 		}
 
 		for (int i = 0; i < threadSize; i++) {
-			threads[i].join(); // ÈÃÖ÷Ïß³ÌµÈ´ı×ÓÏß³ÌÃÇ½áÊø
+			threads[i].join(); // ç­‰å¾…
 		}
 
 		System.out.println("-----test race condition------");
-		System.out.println(CounterThread.counter); // Ã¿´Î½á¹û²»Ò»Ñù
+		System.out.println(CounterThread.counter);
 	}
 
 	public static void testMemoryVisible() throws InterruptedException {
@@ -51,7 +51,7 @@ public class ThreadUnsafeExample {
 		@Override
 		public void run() {
 			while (!flag) {
-				System.out.println("Display Thread flag true"); // ËÀÑ­»·
+				System.out.println("Display Thread flag true");
 			}
 		}
 	}
